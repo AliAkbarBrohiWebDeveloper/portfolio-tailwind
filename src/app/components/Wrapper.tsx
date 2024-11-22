@@ -8,7 +8,6 @@ const Wrapper:FC<{children:React.ReactNode}> = ({children}) => {
 {children}
 
 
-
     </div>
   )
 }

@@ -1,14 +1,9 @@
 
-
-import React from 'react';
 import profile1 from "/public/profile1.png"
-import Typewriter from 'typewriter-effect';
 import Wrapper from './Wrapper';
 import Image from 'next/image';
 
-
 const Hero = () => {
-
 
     const header="I am Ali Akbar Brohi \n frontend web developer"
   return (

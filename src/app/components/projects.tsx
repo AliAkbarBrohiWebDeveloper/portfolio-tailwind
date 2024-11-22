@@ -8,18 +8,12 @@ src:"/amazon.png",
 desc:"Amazon Clone",
 languages:["HTML ,","CSS"]
 
-
-
-
 },
 {
-
 
   src:"/food.png",
 desc:"Food Website Clone",
 languages:["HTML ,","CSS"]
-
-
 
 },
 
