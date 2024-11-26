@@ -12,7 +12,7 @@ const Contact = () => {
     });
   }, []);
   return (
-    <section className=' sm:px-6 lg:px-36 mt-[100px]'>
+    <section className=' mt-[100px]'>
       <Wrapper>
 
 <form action="form" className='text-center gap-x-6 h-auto px-6 flex flex-col items-center rounded-lg py-8 '  data-aos="flip-left">
@@ -22,22 +22,27 @@ const Contact = () => {
 <br />
 <p>
 <label htmlFor="name" className='mt-6 font-bold'>Name: </label>
-<input type="text"  placeholder='Enter Name here' className='mt-2 px-7 py-2 rounded-lg border-2'/>
+<input type="text"  placeholder='Enter Name here' required className='mt-2 px-7 py-2 rounded-lg border-2'/>
 </p>
 <br />
 <p>
 <label htmlFor="email" className='font-bold'>Email: </label>
 
-<input type="email" placeholder='Enter your email here' className='mt-6 px-7 py-2 rounded-lg border-2' />
+<input type="email" placeholder='Enter your email here' required className='mt-6 px-7 py-2 rounded-lg border-2' />
 </p>
 <br />
 <p>
 <label htmlFor="phone" className='font-bold'>Ph:No: </label>
 
-<input type="number" placeholder='Enter your phone Number here' className='mt-6 px-7 py-2 rounded-lg border-2'/>
-</p>
+<input type="number" placeholder='Enter your phone Number here' required className='mt-2 px-7 py-2 rounded-lg border-2'/>
 
-<button className='bg-teal-500 mt-6 px-7 py-2 rounded-lg text-white text-xl'>Send Message</button>
+</p>
+<br />
+<p>
+
+  <textarea className='mt-6 px-7 py-2 rounded-lg border-2' placeholder='Your  Message' rows={5} required></textarea>
+</p>
+<button className='bg-teal-500 mt-2 px-7 py-2 rounded-lg text-white text-xl hover:scale-105 duration-300'>Send Message</button>
 
 </fieldset>
 
