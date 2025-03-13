@@ -5,12 +5,12 @@ import React from 'react'
 import Wrapper from './Wrapper'
 
 const projects = [
-  {
-    src: "/amazon.png",
-    desc: "Amazon Clone",
-    languages: ["HTML", "CSS"],
-    link: "https://amazon-clone-inky-tau.vercel.app/"
-  },
+  // {
+  //   src: "/amazon.png",
+  //   desc: "Amazon Clone",
+  //   languages: ["HTML", "CSS"],
+  //   link: "https://amazon-clone-inky-tau.vercel.app/"
+  // },
   {
     src: "/ecom1.png",
     desc: "Ui Ux Ecommerce website",
