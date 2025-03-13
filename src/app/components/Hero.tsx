@@ -1,38 +1,136 @@
-
-import profile1 from "/public/profile1.png"
+import profile1 from "/public/profile1.png";
 import Wrapper from './Wrapper';
 import Image from 'next/image';
 
 const Hero = () => {
+  const header = "I am Ali Akbar Brohi \n frontend web developer";
 
-    const header="I am Ali Akbar Brohi \n frontend web developer"
   return (
-    <>
-    <section>
+    <section className="bg-gradient-to-r from-teal-500 to-blue-500 py-16">
       <Wrapper>
-    
-    <main className='flex  justify-between items-center flex-col md:flex-row mt-6'data-aos="zoom-in-down">
+        <main className="flex justify-center items-center flex-col-reverse md:flex-row mt-6 space-y-8 md:space-y-0 md:space-x-16" data-aos="zoom-in-down">
+          {/* Text Section */}
+          <div className="text-center md:text-left">
+            <h1 className="text-white font-bold text-4xl md:text-5xl whitespace-pre-line leading-tight">
+              {header}
+            </h1>
+            <p className="font-medium text-white text-lg mt-4 max-w-3xl mx-auto md:mx-0">
+              As a frontend web developer, I specialize in creating intuitive and visually engaging user interfaces that enhance digital experiences. Using my expertise in React, Next.js, and Tailwind CSS, I bring designs to life with high-performance, dynamic web applications. I focus on building responsive and accessible websites that deliver seamless user interactions across all devices.
+            </p>
 
-<div>
+            {/* Button Section */}
+            <div className="mt-8 flex justify-center md:justify-start gap-4">
+              <button className="py-3 px-8 bg-teal-700 text-white text-lg font-semibold rounded-lg shadow-lg hover:bg-teal-600 transition-all duration-300 transform hover:scale-105">
+                View My Work
+              </button>
 
+              <a 
+                href="/Ali_Akbar_Brohi_CV.pdf" // Link to the CV file in the public folder
+                download // This will trigger the file download
+                className="py-3 px-8 bg-teal-700 text-white text-lg font-semibold rounded-lg shadow-lg hover:bg-teal-600 transition-all duration-300 transform hover:scale-105"
+              >
+                Download CV
+              </a>
+            </div>
+          </div>
 
-<h1 className='font-bold text-3xl whitespace-pre-line'>{header}</h1>
-<p className='font-medium text-gray-500 mt-2 max-w-screen-sm'> As a frontend web developer, I focus on crafting intuitive and visually appealing user interfaces that elevate digital experiences. I leverage my expertise in HTML, CSS, and JavaScript to bring designs to life, ensuring that websites are both functional and responsive across all devices.</p>
-<button className='py-2 px-7 bg-teal-500 text-white mt-4 rounded-lg hover:scale-105 duration-300'>View My Work</button>
-
-</div>
-<div>
-
-<Image src={profile1} alt='profile-picture' height={400} width={400} className='rounded-full mt-9'/>
-
-</div>
-
-    </main>
-    </Wrapper>
+          {/* Profile Image */}
+          <div className="flex justify-center md:justify-start">
+            <Image
+              src={profile1}
+              alt="profile-picture"
+              height={400}
+              width={400}
+              className="rounded-full border-4 border-white shadow-xl"
+            />
+          </div>
+        </main>
+      </Wrapper>
     </section>
-    </>
-    
-    
-  )
-}
-export default Hero
+  );
+};
+
+export default Hero;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import profile1 from "/public/profile1.png";
+// import Wrapper from './Wrapper';
+// import Image from 'next/image';
+
+// const Hero = () => {
+//   const header = "I am Ali Akbar Brohi \n frontend web developer";
+
+//   return (
+//     <section className="bg-gradient-to-r from-teal-500 to-blue-500 py-16">
+//       <Wrapper>
+//         <main className="flex justify-center items-center flex-col-reverse md:flex-row mt-6 space-y-8 md:space-y-0 md:space-x-16" data-aos="zoom-in-down">
+//           {/* Text Section */}
+//           <div className="text-center md:text-left">
+//             <h1 className="text-white font-bold text-4xl md:text-5xl whitespace-pre-line leading-tight">
+//               {header}
+//             </h1>
+//             <p className="font-medium text-white text-lg mt-4 max-w-3xl mx-auto md:mx-0">
+//               As a frontend web developer, I specialize in creating intuitive and visually engaging user interfaces that enhance digital experiences. Using my expertise in React, Next.js, and Tailwind CSS, I bring designs to life with high-performance, dynamic web applications. I focus on building responsive and accessible websites that deliver seamless user interactions across all devices.
+//             </p>
+//             <button className="mt-6 py-2 px-8 bg-teal-700 text-white text-lg font-semibold rounded-lg shadow-lg hover:bg-teal-600 transition-all duration-300 transform hover:scale-105">
+//               View My Work
+//             </button>
+
+//             {/* Download CV Button */}
+//             <div>
+//               <a 
+//                 href="/Ali_Akbar_Brohi_CV.pdf" // Link to the CV file in the public folder
+//                 download // This will trigger the file download
+//                 className="mt-32 py-2 px-8 bg-teal-700 text-white text-lg font-semibold rounded-lg shadow-lg hover:bg-teal-600 transition-all duration-300 transform hover:scale-105"
+//               >
+//                 Download CV
+//               </a>
+//             </div>
+//           </div>
+
+//           {/* Profile Image */}
+//           <div className="flex justify-center md:justify-start">
+//             <Image
+//               src={profile1}
+//               alt="profile-picture"
+//               height={400}
+//               width={400}
+//               className="rounded-full border-4 border-white shadow-xl"
+//             />
+//           </div>
+//         </main>
+//       </Wrapper>
+//     </section>
+//   );
+// };
+
+// export default Hero;
+
+
+
+
+
+
+
+
+
